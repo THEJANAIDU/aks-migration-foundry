@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vnetResourceGroup": {"value": "REPLACE-network-rg"},
+    "vnetName": {"value": "REPLACE-vnet"},
+    "aksSubnetName": {"value": "REPLACE-aks-subnet"},
+    "privateEndpointSubnetId": {"value": "/subscriptions/REPLACE/resourceGroups/REPLACE/providers/Microsoft.Network/virtualNetworks/REPLACE/subnets/REPLACE"},
+    "clusterName": {"value": "REPLACE-aks"},
+    "registryName": {"value": "replacegloballyuniqueregistry"},
+    "kubernetesVersion": {"value": "REPLACE-supported-regional-version"},
+    "adminGroupObjectIds": {"value": ["REPLACE-entra-admin-group-object-id"]},
+    "podCidr": {"value": "REPLACE-nonoverlapping-pod-cidr"},
+    "serviceCidr": {"value": "REPLACE-nonoverlapping-service-cidr"},
+    "dnsServiceIP": {"value": "REPLACE-service-dns-ip"}
+  }
+}
